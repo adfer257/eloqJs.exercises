@@ -1,0 +1,40 @@
+//make a 8x8 grid of " " and "#" with the starting character alternating on each line (horizontally and vertically)
+//example:     
+               # # # #
+              # # # # 
+               # # # #
+              # # # # 
+               # # # #
+              # # # # 
+               # # # #
+              # # # # 
+              
+//finished code
+
+let chessBoard="";
+for (let i = 0; i < 8; i++){ //on each row
+  for (let j = 0; j < 8; j++){		// on each column, excecute    
+    //if i is even
+    if ( i % 2 === 0){
+    	//draw "o" first
+      	//if j is even
+      	if ( j % 2 === 0){
+        	chessBoard += " ";
+        }
+      	else
+          chessBoard += "#";
+    }
+    //otherwise, if i is odd 
+    else
+    	//draw "#"
+      	//if j is even
+      	if ( j % 2 === 0){
+        	chessBoard+="#";
+        }
+    	else 
+          chessBoard += " ";
+  }// for-loop
+  chessBoard+='\n';
+}
+
+console.log(chessBoard);
