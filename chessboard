@@ -41,3 +41,20 @@ console.log(chessBoard);
 
 /* after-thought: would have been simpler code if i utilized the relationship of i and j with each other, 
 then I wouldn't have to use alot of if-else*/
+
+let size = 8;
+
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n";
+}
+
+console.log(board);
