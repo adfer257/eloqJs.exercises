@@ -38,3 +38,6 @@ for (let i = 0; i < 8; i++){ //on each row
 }
 
 console.log(chessBoard);
+
+/* after-thought: would have been simpler code if i utilized the relationship of i and j with each other, 
+then I wouldn't have to use alot of if-else*/
